@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareBridge Hospital</title>
+    <!-- Google Fonts: Lexend (very easy to read, great for headings) + Source
+    Sans 3 (body text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Emergency Bar -->
+    <div class="emergency">
+      Emergency? Call <a href="tel:5550100">555-0100</a>. We are open 24 Hours.
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <a href="#" class="logo"><span class="logo-mark">+</span> CareBridge</a>
+      <nav class="nav">
+        <a href="#departments">Departments</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#visit">Visit us</a>
+      </nav>
+      <a href="#book" class="btn btn-small">Book appointment</a>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <h1>Caring for you, every step of the way.</h1>
+          <p>
+            Book a visit with a doctor in a few clicks. No long phone calls, no
+            waiting in line to make an appointment.
+          </p>
+          <a href="#doctors" class="btn btn-outline">Find a doctor</a>
+        </div>
+
+        <form class="booking" id="book">
+          <h2>Book an appointment</h2>
+          <label for="name">Full name</label>
+          <input type="text" id="name" placeholder="Your name" required />
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Your Phone number"
+            required
+          />
+          <label for="dept">Department</label>
+          <select id="dept">
+            <option>General medicine</option>
+            <option>Heart care</option>
+            <option>Children's Health</option>
+            <option>Bones and joints</option>
+            <option>Eye care</option>
+            <option>Dental care</option>
+          </select>
+
+          <div class="row">
+            <div>
+              <label for="date">Date</label>
+              <input type="date" id="date" required />
+            </div>
+            <div>
+              <label for="time">Time</label>
+              <select id="time">
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn">Request appointment</button>
+        </form>
+      </section>
+
+      <!-- Heartbeat line -->
+      <div class="ecg">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+          <path
+            pathLength="100"
+            d="M0 40 H470 L500 40 L525 8 L555 72 L582 24 L606 40 H1200"
+          />
+        </svg>
+      </div>
+
+      <!-- Departments -->
+      <section class="section" id="departments">
+        <h2>Care for every part of you</h2>
+        <p class="section-intro">Choose a department to see who can help.</p>
+        <div class="grid-3">
+          <article class="card">
+            <div class="icon">🩺</div>
+            <h3>General Medicine</h3>
+            <p>
+              Check-ups, fevers, long-term conditions, and everyday health
+              questions.
+            </p>
+          </article>
+          <article class="card">
+            <div class="icon">🫀</div>
+            <h3>Health Care</h3>
+            <p>
+              Heart tests, blood pressure checks, and ongoing heart health
+              support.
+            </p>
+          </article>
+          <article class="card">
+            <div class="icon">🧒</div>
+            <h3>Children's Health</h3>
+            <p>
+              Gentle care for babies, kids and teenagers, including vaccines.
+            </p>
+          </article>
+          <article class="card">
+            <div class="icon">🦴</div>
+            <h3>Bones and joints</h3>
+            <p>Treatments for injuries, back pain and joint problems.</p>
+          </article>
+          <article class="card">
+            <div class="icon">👁️</div>
+            <h3>Eye care</h3>
+            <p>
+              Eye tests, glasses prescriptions, and treatment for eye condition.
+            </p>
+          </article>
+          <article class="card">
+            <div class="icon">🦷</div>
+            <h3>Dental Care</h3>
+            <p>Cleanings, fillings, and friendly advice for healthy teeth.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Why choose us -->
+      <section class="section section-mint">
+        <h2>What to expect when you visit</h2>
+        <div class="grid-3">
+          <div class="point">
+            <h3>Clear answer</h3>
+            <p>Your doctor explains your results in plain words.</p>
+          </div>
+          <div class="point">
+            <h3>Short waits</h3>
+            <p>Book a time slot and be seen close to it.</p>
+          </div>
+          <div class="point">
+            <h3>One Place</h3>
+            <p>Tests, medicine, and follow-ups all under one roof.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Doctors -->
+      <section class="section" id="doctors">
+        <h2>Meet our doctors</h2>
+        <div class="grid-3">
+          <article class="doctor">
+            <div class="avatar">NA</div>
+            <h3>Dr. Nadia Ahmed</h3>
+            <p class="speciality">General Medicine</p>
+            <p class="next">Next available: Tomorrow, 10:30 AM</p>
+            <a href="#book" class="btn btn-outline btn-small"
+              >Book with Dr. Ahmed</a
+            >
+          </article>
+
+          <article class="doctor">
+            <div class="avatar">RM</div>
+            <h3>Dr. Rohan Magar</h3>
+            <p class="speciality">Heart care</p>
+            <p class="next">Next available: Wednesday, 02:00 PM</p>
+            <a href="#book" class="btn btn-outline btn-small"
+              >Book with Dr. Mehta</a
+            >
+          </article>
+
+          <article class="doctor">
+            <div class="avatar">AB</div>
+            <h3>Dr. Abishek Badu</h3>
+            <p class="speciality">Children's health</p>
+            <p class="next">Next available: Thursday, 09:30 AM</p>
+            <a href="#book" class="btn btn-outline btn-small"
+              >Book with Dr. Abishek</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <!-- Testimonial -->
+      <section class="section section-mint">
+        <blockquote>
+          Booking took two minutes, and the doctor actually listened. I left
+          knowing exactly what to do next.
+          <cite>Priya, patient</cite>
+        </blockquote>
+      </section>
+
+      <!-- Visit us -->
+      <section class="section section-dark" id="visit">
+        <h2>Visit us</h2>
+        <div class="visit-grid">
+          <div>
+            <h3>Opening hours</h3>
+            <table>
+              <tr>
+                <td>Monday to Friday</td>
+                <td>08:00 AM to 08:00 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>09:00 AM to 05:00 PM</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>Emergency only</td>
+              </tr>
+            </table>
+          </div>
+          <div>
+            <h3>Find us</h3>
+            <p>21 Greenfield Road <br />Free parking at the main entrance</p>
+            <p>Appointments: 555-0123 <br />appointments@carebridge.example</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>CareBridge Hospital · In an emergency, call 555-0100</p>
+    </footer>
+  </body>
+</html>
